@@ -48,3 +48,6 @@ body {
     border-bottom: none;
   }
 }
+#suk li {
+  text-decoration: underline;
+}
