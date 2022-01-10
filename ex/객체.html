@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>create</h2>
+
+    <script>
+      var coworkers = {
+        "programmer":"egoing",
+        "disigner":"leezche"
+      };
+      document.write("programmer:"+coworkers.programmer+"<br>");
+      document.write("disigner:"+coworkers.programmer+"<br>");
+      coworkers.bookkeeper = "duru";
+      document.write("bookkeeper:"+coworkers.bookkeeper+"<br>");
+      coworkers["data scientist"] = "teaho";
+      document.write("data scientist:"+coworkers["data scientist"]+"<br>")
+
+  </script>
+  <!--
+    <h2>iterate</h2>
+    <script>
+      for(var key in coworkers) {
+        document.write(key+'<br>');
+      }
+    </script>
+      <script>
+        for(var key in coworkers) {
+          document.write(key+' : '+coworkers[key]+'<br>');
+
+        }
+     </script>
+        -->
+
+     <h2>property & method</h2>
+     <script>
+       coworkers.showAll = function(){
+         for(var key in this) {
+           document.write(key+' : '+this[key]+'<br>');
+         }
+       }
+coworkers.showAll();
+     </script>
+  </body>
+</html>
+
+<!-- 객체는 정리정돈의 시간
+  함수나변수들이 엄청나게 많아지면
+  복잡도의 한계에 도달하게되는데
+  서로연관된 함수와 변수를 같은이름으로 그룹핑해서
+  같은이름으로 정리정돈하기위한 이유
+
+  열심히꾸려온 예제를 함수로정리정돈하면서
+  나아가봅시다
+
+ 작은줄을함수화시키는것은 별의미가 없을수 있지만
+ 한줄이더라하더라도 의미가불명확하거나 시간이지나면 파악하기어려울경우
+ 함수를통해 로직에 의미를 부여하는것도 아주좋은 전략이다
+
+ 폴더라는관점으로봐도 무방하다
+ fasdfasd. 뒤에 .이나오면 객체
+ . 뒤에오는 단어는 메소드 라고 부른다
+
+ 배열이라는도구는
+ 정보를담는그릇이면서 정보가 순서대로 저장된다는 특징을가진다
+ 순서없이저장할수있는도구가 바로 객체
+
+ 꺼낼필요가있다면 수납상자 에넣어서
+ 이름과함께넣는다
+ 객체가바로 이름이있는 정리정돈상자
+ 배열은 대괄호 객체는 중괄호
+
+ 객체는 문자 숫자 배열을 다 담을수 있다
+ 객체는 함수도 담을수 있다
+ 함수가 소속되어있는 객체를 가리키는 약어는 this
+ 객체에소속된 함수는 메소드
+ 객체에 소속된 변수는 프로퍼티
+
+   존나어렵다 반복으로다시들을것..
+  -->

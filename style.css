@@ -1,5 +1,5 @@
 a {
-  color:black;
+  color:coral;
   text-decoration: none;
 }
 #active {
@@ -24,6 +24,7 @@ ol{
 }
 body {
   margin: 0;
+
 }
 #grid{
   display: grid;
@@ -48,6 +49,6 @@ body {
     border-bottom: none;
   }
 }
-#suk li {
+#suk li{
   text-decoration: underline;
 }

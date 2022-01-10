@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <!--  fdsafadsfasd
+    <input type="button" value="hi" onclick="alert('hi')">
+    <input type="text" onchange="alert('changed')" >
+    <input type="text" name="" onkeydown="alert('keydown')" value="">
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'gray';
+        document.querySelector('body').style.color = 'cyan';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        ">
+<input id="night_day" type="button" value="night" onclick="
+if (document.querySelector('#night_day').value === 'night') {
+document.querySelector('body').style.backgroundColor = 'gray';
+    document.querySelector('body').style.color = 'cyan';
+    document.querySelector('#night_day').value = 'day';
+  }  else {
+    document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+      }
+">
+
+<input  id type="button" value="night" onclick="
+var hong=document.querySelector('body')
+if (this.value === 'night') {
+   hong.style.backgroundColor = 'gray';
+   hong.style.color = 'cyan';
+    this.value = 'day';
+  }
+  else {
+   hong.style.backgroundColor = 'white';
+   hong.style.color = 'black';
+        this.value = 'night';
+      }
+">
+  </body>
+-->
+  <script>
+    function nightdayhandler(self){
+  var hong=document.querySelector('body')
+  if (self.value === 'night') {
+     hong.style.backgroundColor = 'gray';
+     hong.style.color = 'cyan';
+      self.value = 'day';
+      var alist = document.querySelectorAll('a')
+var i=0;
+while(i< alist.length){
+alist[i].style.color = 'powderblue';
+i=i+1;
+    }
+  }else {
+     hong.style.backgroundColor = 'white';
+     hong.style.color = 'black';
+          self.value = 'night';
+          var alist = document.querySelectorAll('a')
+    var i=0;
+    while(i< alist.length){
+    alist[i].style.color = 'powderblue';
+    i=i+1;
+        }
+      }
+    }
+    </script>
+
+    <input id="night_day" type="button" VALUE="night" onclick="
+    nightdayhandler(this)
+    ">
+
+
+</html>
