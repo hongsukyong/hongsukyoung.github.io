@@ -13,11 +13,11 @@ var links = {
 var body = {
 setcolor:  function bodysetcolor(color){
   // document.querySelector('body').style.color = color;
-  $('body').css('color', color);
+   $('body').css('color', color);
 },
 setbackgroundcolor:function bodysetbackgroundcolor(color){
   // document.querySelector('body').style.backgroundColor = color;
-  $('body').css('backgroundColor', color);
+   $('body').css('backgroundColor', color);
   }
 }
 
@@ -27,7 +27,7 @@ var hong=document.querySelector('body');
 if (self.value === 'night') {
    body.setbackgroundcolor('dimgray');
    body.setcolor('powderblue');
-    self.value = 'day';
+    self.value = ' day  ';
 
     links.setcolor('powderblue');
   }
